@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "plant-data-repository"
+version = "0.1.0"
+description = ""
+authors = ["Derek Rodriguez <derek.rodriguez@pm.me>"]
+license = "Apache 2.0"
+readme = "README.md"
+packages = [{ include = "plant_data_repository" }]
+
+[tool.poetry.dependencies]
+python = "3.11.2"
+fastapi = "^0.109.2"
+uvicorn = { extras = ["standard"], version = "^0.27.1" }
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.2.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
